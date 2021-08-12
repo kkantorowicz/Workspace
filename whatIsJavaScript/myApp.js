@@ -1,4 +1,6 @@
+//My way is always better... 
 console.log('in myApp.js...')
+
 function createParagraph(response) {
     let para = document.createElement('p');
     para.textContent = response;
