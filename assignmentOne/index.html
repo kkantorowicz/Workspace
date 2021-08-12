@@ -7,11 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply JS Example</title>
 
+    <!-- this is how MDN wanted me to do it inline...  -->
+    <!-- <script>
+        console.log('inline scripting...')
+        document.addEventListener("DOMContentLoaded", function () {
+            function createParagraph() {
+                let para = document.createElement('p');
+                para.textContent = 'This is the stock Message...';
+                document.body.appendChild(para);
+            }
+
+            const buttons = document.querySelectorAll('button');
+
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener('click', createParagraph);
+            }
+        });
+    </script> -->
+
     <!-- The way MDN told me to do it... mostly -->
-    <!-- <script src="app.js"></script> -->
+    <!-- <script src="app.js" defer></script> -->
 
     <!-- Just a little extra...  -->
-    <script src="myApp.js"></script>
+    <script src="myApp.js" defer></script>
 </head>
 
 <body>

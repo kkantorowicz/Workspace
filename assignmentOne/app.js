@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    function createParagraph() {
-        let para = document.createElement('p');
-        para.textContent = 'This is the stock Message...';
-        document.body.appendChild(para);
-    }
+console.log('In app.js...')
 
-    const buttons = document.querySelectorAll('button');
+function createParagraph() {
+    let para = document.createElement('p');
+    para.textContent = 'This is the stock Message...';
+    document.body.appendChild(para);
+}
 
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', createParagraph);
-    }
-});
+const buttons = document.querySelectorAll('button');
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', createParagraph);
+}
