@@ -1,0 +1,2 @@
+Is it better to use local installation files for stuff like jQuery, Bootstrap... etc?
+is $(document).ready necessary if you use defer on the script tag in the HTML... Perhaps just good coding?
