@@ -1,0 +1,1 @@
+console.log("First Splash script now logging... ");
