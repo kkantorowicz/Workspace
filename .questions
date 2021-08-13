@@ -1,2 +1,6 @@
 Is it better to use local installation files for stuff like jQuery, Bootstrap... etc?
-is $(document).ready necessary if you use defer on the script tag in the HTML... Perhaps just good coding?
+
+Is $(document).ready necessary if you use defer on the script tag in the HTML... Perhaps just good coding?
+
+I get the sense that frameworks like Angular and Bootstrap are intended to keep the developer out of files other 
+    than the main html file as much as possibe.  IE: css and js...
