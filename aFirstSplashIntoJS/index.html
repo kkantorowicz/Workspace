@@ -28,37 +28,39 @@
         <div class="row mt-5">
             <div class="col"></div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 30rem;">
                     <!-- <img src="..." class="card-img-top" alt="..."> -->
                     <div class="card-body">
                         <h5 class="card-title">READ MY MIND!</h5>
-                        <p class="card-text">Hit the start button and I'll think of a number between 1 and 100.
+                        <p class="card-text">I'm thinking of a number between 1 and 100.
                         <p>You have
-                            10 guesses to come up with the right answer or you lose! Enter a guess below and try to...
+                            <span id="trys"></span> guesses to come up with the right answer or you lose! Enter a
+                            guess below and try to...
                         </p>
                         <p>READ
                             MY MIND!</p>
                         </p>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username"
-                                aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                            <input id="guessField" type="text" class="form-control" placeholder="Submit a Guess"
+                                aria-label="Submit a Guess" aria-describedby="guessSubmit">
+                            <button class="btn btn-outline-success" type="button" id="guessSubmit">Submit</button>
                         </div>
+                        <p id="guesses"></p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between"><span>Number of
                                 Guesses: </span>
-                            <span class="guesses"></span>
+                            <span id="guessCount"></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between"><span>Result: </span><span
-                                class="lastResult"></span>
+                                id="lastResult"></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between"><span>Your guess was: </span><span
-                                class="lowOrHi"></span></li>
+                                id="lowOrHi"></span></li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">these may</a>
-                        <a href="#" class="card-link">become buttons</a>
+                    <div class="card-body d-flex justify-content-center">
+                        <button id="gameReset" class="btn btn-secondary">Start a New
+                            Game!</button>
                     </div>
                 </div>
 
