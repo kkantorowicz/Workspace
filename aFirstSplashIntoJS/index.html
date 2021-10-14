@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Splash</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"
+        defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
+
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col"></div>
+            <div class="col">
+                <div class="card" style="width: 30rem;">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">READ MY MIND!</h5>
+                        <p class="card-text">I'm thinking of a number between 1 and 100.
+                        <p>You have
+                            <span id="trys"></span> guesses to come up with the right answer or you lose! Enter a
+                            guess below and try to...
+                        </p>
+                        <p>READ
+                            MY MIND!</p>
+                        </p>
+                        <div class="input-group mb-3">
+                            <input id="guessField" type="text" class="form-control" placeholder="Submit a Guess"
+                                aria-label="Submit a Guess" aria-describedby="guessSubmit">
+                            <button class="btn btn-outline-success" type="button" id="guessSubmit">Submit</button>
+                        </div>
+                        <p id="guesses"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between"><span>Number of
+                                Guesses: </span>
+                            <span id="guessCount"></span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between"><span>Result: </span><span
+                                id="lastResult"></span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between"><span>Your guess was: </span><span
+                                id="lowOrHi"></span></li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-center">
+                        <button id="gameReset" class="btn btn-secondary">Start a New
+                            Game!</button>
+                    </div>
+                </div>
+
+                <p></p>
+            </div>
+            <div class="col"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
