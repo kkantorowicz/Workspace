@@ -1,2 +1,2 @@
-# windowsWorkspace
-general code workspace on my windows machine
+# Workspace
+general code workspace on my work machine
